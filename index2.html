@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-with-login</title>
+    <style>
+      .login-container {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+      }
+     
+       form div{
+        display: flex;
+        flex-direction: column;
+      }
+      /* background-design */
+      .content-design{
+        background-color: aliceblue;
+         padding: 10px 40px;
+         border-radius: 10px;
+      }
+      /* here start the design-part */
+      .input-design .user-input{
+         display: flex;
+         flex-direction: column;
+         width: 250px;
+         height: 30px;
+         margin-bottom: 10px; 
+      }
+    
+      /* check-box */
+      .check-box-design .check-box{
+        margin-bottom: 10px;
+      }
+      .btn-design button{
+        padding:10px 30px;
+        background-color:rgb(32, 87, 229);
+        color: white;
+        border: none;
+      }
+      /* forgot-page */
+      .forgot-desgin p{
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .forgot-desgin a{
+        text-decoration: none;
+      }
+      
+
+
+    </style>
+  </head>
+  <body>
+    <!-- login-with-flex-->
+    <div class="login-container">
+
+        <div class="content-design">
+
+             <h1 style="text-align: center; font-style: italic; font-size: 100;">Login</h1>
+
+            <form action="#" method="post">
+          <div class="input-design">
+            <label for="email">Email:</label>
+            <input class="user-input" type="email" name="email" id="email" placeholder="Enter email" />
+          </div>
+
+          <div class="input-design">
+            <label for="password">Password:</label>
+            <input class="user-input" type="password" name="email" id="password" placeholder="Enter password"/>
+          </div>
+
+          <div class="check-box-design">
+            <label class="check-box" for="checkbox"><input class="check-input" id="checkbox" type="checkbox"/>Show Password</label>
+          </div>
+
+          <div class="btn-design">
+            <button type="submit">Sign In</button>
+          </div>
+        </form>
+
+        <div class="forgot-desgin">
+          <p>Forgot<a href="">Username / Password</a>?</p>
+          <p>Don't have an account? <a href="">Sign up</a></p>
+        </div>
+        </div>
+       
+
+      </div>
+
+  </body>
+</html>
